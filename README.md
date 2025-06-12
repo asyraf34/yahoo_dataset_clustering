@@ -1,4 +1,4 @@
-# Yahoo Dataset Time Series Clustering Project
+ # :beginner: Yahoo Dataset Time Series Clustering Project
 
 ## 프로젝트 개요
 
