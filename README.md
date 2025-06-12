@@ -57,7 +57,7 @@
 
 ## 결과 시각화
 
-![시각화]("[yahoo_result.png](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_result.png)")
+![시각화]("yahoo_result.png")
 
 - **좌상:** 훈련 데이터의 클러스터 할당 결과 (색상별로 구간 구분)
 - **중상:** PCA 공간에서의 클러스터 분포 (군집 간 경계가 명확)
