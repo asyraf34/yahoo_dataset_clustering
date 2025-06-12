@@ -57,7 +57,7 @@
 
 ## 결과 시각화
 
-![시각화]("yahoo_result.png")
+![시각화](yahoo_result.png)
 
 - **좌상:** 훈련 데이터의 클러스터 할당 결과 (색상별로 구간 구분)
 - **중상:** PCA 공간에서의 클러스터 분포 (군집 간 경계가 명확)
@@ -67,6 +67,39 @@
 - **우하:** 최종 수치 요약
 
 ---
+
+# 클러스터링 결과 해석  
+> ⚠️ 아래 내용은 `yahoo_clustering_model2` 모델의 분석 결과임을 참고하세요.
+
+## 📍 60분 윈도우 클러스터링 (왼쪽 그래프)
+
+- 🔴 오른쪽 끝에 퍼져 있는 클러스터들 (예: PCA 1 값이 3 이상인 회색/노란 점들)  
+  ✅ 트래픽 양이 높고 변동성도 큰 구간  
+  평균(mean)과 표준편차(std)가 모두 높은 구간에서 나타남  
+  이벤트 발생, 갑작스러운 사용자 증가 등 불안정하거나 혼잡한 시간대
+
+- 🟢🟦 왼쪽 영역의 클러스터들 (PCA 1이 0 이하)  
+  ✅ 트래픽이 낮고 매우 안정적인 시간대  
+  새벽 시간대나 비활성 시간대로 추정됨
+
+- 🟠🟥 중앙 부분 클러스터들 (PCA 1이 0~2 사이)  
+  ✅ 보통 수준의 트래픽과 중간 정도의 변동성  
+  일반적인 주간 사용 시간대에 해당할 가능성이 높음
+
+## 📍 30분 윈도우 클러스터링 (오른쪽 그래프)
+
+- 🟩 초록색 클러스터 (중앙 위쪽)  
+  ✅ 중간에서 높은 트래픽, 약간의 변동성  
+  일정한 형태로 밀집되어 있음 → 꾸준한 사용자 활동 시점
+
+- 🟦 청록색 클러스터 (왼쪽 하단)  
+  ✅ 트래픽이 낮고 안정적  
+  사용자 활동이 거의 없는 시간대 (예: 새벽)
+
+- ⚪ 회색 점들 (가장자리 또는 멀리 흩어진 부분)  
+  ✅ 이상치(Outliers)  
+  매우 드문 이벤트나 갑작스러운 트래픽 변화가 있을 수 있음
+  ![시각화](image_path)
 
 ## 최종 결과 요약
 
@@ -91,7 +124,7 @@
 
 - 프로젝트 코드 및 노트북 보기:
   - [model1](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model1.ipynb)
-  - [model2](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model1.ipynb)
+  - [model2](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model2.ipynb)
 - 데이터: Yahoo Finance 시계열 데이터
 - 주요 라이브러리: pandas, numpy, scikit-learn, matplotlib, scipy
 
