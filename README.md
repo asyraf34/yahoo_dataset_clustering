@@ -101,6 +101,8 @@
   매우 드문 이벤트나 갑작스러운 트래픽 변화가 있을 수 있음
   ![시각화](yahoo_result2.png)
 
+---
+
 ## 최종 결과 요약
 
 - **Training silhouette score:** 0.525  
@@ -119,12 +121,17 @@
 - **활용성:** 이 파이프라인은 이상 탐지, 패턴 분류, 비즈니스 의사결정 지원(예: 광고 타이밍, 유지보수 시점 선정 등)에 활용할 수 있습니다.
 
 ---
+# 최종 성능 평가
+> ⚠️ 아래 내용은 `yahoo_clustering_final` 모델의 분석 결과임을 참고하세요.
+- ![](img.png)
+
 
 ## 참고
 
 - 프로젝트 코드 및 노트북 보기:
   - [model1](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model1.ipynb)
   - [model2](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model2.ipynb)
+  - [final](link.ipynb)
 - 데이터: Yahoo Finance 시계열 데이터
 - 주요 라이브러리: pandas, numpy, scikit-learn, matplotlib, scipy
 
