@@ -131,7 +131,7 @@
 - 프로젝트 코드 및 노트북 보기:
   - [model1](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model1.ipynb)
   - [model2](https://github.com/asyraf34/yahoo_dataset_documentation/blob/main/yahoo_clustering_model2.ipynb)
-  - [final](yahoo_final_result.png)
+  - [final](yahoo_clustering_final.ipynb)
 - 데이터: Yahoo Finance 시계열 데이터
 - 주요 라이브러리: pandas, numpy, scikit-learn, matplotlib, scipy
 
