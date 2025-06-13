@@ -123,7 +123,7 @@
 ---
 # 최종 성능 평가
 > ⚠️ 아래 내용은 `yahoo_clustering_final` 모델의 분석 결과임을 참고하세요.
-- ![](img.png)
+![final_result](yahoo_final_result.png)
 
 
 ## 참고
